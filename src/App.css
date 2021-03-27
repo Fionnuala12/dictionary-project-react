@@ -1,0 +1,14 @@
+.App header {
+  text-align: center;
+  margin: 5px;
+}
+
+.App img {
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+h1{
+display: inline;
+margin-top: 5px;
+}
