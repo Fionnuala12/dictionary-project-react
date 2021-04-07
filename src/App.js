@@ -11,7 +11,7 @@ function App() {
         <img src={book} className="Book-logo img-fluid" alt="book" /> <h1> Dictionary</h1>
       </header>
       <main> 
-        <Dictionary />
+        <Dictionary defaultKeyword = "sunset"/>
       </main>
       <footer>
         Coded by Fionnuala Wilson
