@@ -1,15 +1,19 @@
 import React from "react"; 
+import ReactAudioPlayer from 'react-audio-player';
 import './Phonetics.css';
 
 export default function Phonetics(props){
     return (
         <div className="Phonetics"> 
-        <a href = {props.phonetic.audio} rel="noreferrer" target="_blank"> 
-        <i className="fas fa-volume-up"></i>
-        </a>{" "}
-        <span className="text">
+        <div className="text">
         {props.phonetic.text}
-        </span>
+        </div>
+        <ReactAudioPlayer 
+        src= {props.phonetic.audio}
+        className="audio-player"
+        onPlay 
+        controls
+        /> 
         </div>
     );
 }

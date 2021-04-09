@@ -1,7 +1,13 @@
+.dictionary-app-wrapper{
+  background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
+}
+
 .App {
     padding: 60px 0 100px;
     max-width: 960px;
     margin: 0 auto;
+    font-family: 'Architects Daughter', cursive;
+    
 }
 
 .App header {
@@ -19,3 +25,5 @@ margin-top: 5px;
   text-align: center;
   padding: 20px;
 }
+
+

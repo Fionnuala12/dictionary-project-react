@@ -1,7 +1,8 @@
-import React, { useState } from "react"; 
+import React, { useState } from "react";
+import axios from "axios"; 
+import Loader from "react-loader-spinner";
 import Results from './Results';
 import Photos from './Photos';
-import axios from "axios";
 import './Dictionary.css';
 
 export default function Dictionary(props){
@@ -50,10 +51,14 @@ if(loaded){
         <section>
         <h2>What would you like to look up? </h2>
         <form onSubmit={handleSubmit}> 
-            <input type="search" placeholder="type word here..." className="search-bar" defaultValue={props.defaultKeyword} onChange={handleKeywordChange}/>
+        <div className="row">
+            <div className="mb-3">
+            <input type="search" placeholder="type word here..." className="search-bar" defaultValue={props.defaultKeyword} onChange={handleKeywordChange} />
             <button type="submit" className="btn btn-primary">   
             <i className="fas fa-search"></i>
             </button>
+            </div>
+            </div>
         </form>
         </section>
         <Results results={results}/>
@@ -62,7 +67,20 @@ if(loaded){
     )
 } else {
     load()
-    return "Loading...."
-}
-    
+    return (
+        <div className="loader">
+        <Loader
+          type="Watch"
+          color="#00BFFF"
+          height={100}
+          width={100}
+          timeout={3000} 
+          style={{
+            position: 'absolute', left: '50%', top: '50%',
+            transform: 'translate(-50%, -50%)'
+          }}
+          />
+          </div>
+    ) 
+}    
 }
