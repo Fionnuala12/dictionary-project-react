@@ -1,12 +1,9 @@
-.dictionary-app-wrapper{
-  background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
-}
 
 .App {
-    padding: 60px 0 100px;
-    max-width: 960px;
+    padding: 50px 0 90px;
+    max-width: 900px;
     margin: 0 auto;
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Noto Sans JP', sans-serif;
     
 }
 
@@ -19,6 +16,9 @@
 .App h1{
 display: inline;
 margin-top: 5px;
+font-weight: 900;
+font-size: 45px;
+
 }
 
 .App footer{

@@ -51,14 +51,7 @@ if(loaded){
         <section>
         <h2>What would you like to look up? </h2>
         <form onSubmit={handleSubmit}> 
-        <div className="row">
-            <div className="mb-3">
             <input type="search" placeholder="type word here..." className="search-bar" defaultValue={props.defaultKeyword} onChange={handleKeywordChange} />
-            <button type="submit" className="btn btn-primary">   
-            <i className="fas fa-search"></i>
-            </button>
-            </div>
-            </div>
         </form>
         </section>
         <Results results={results}/>
