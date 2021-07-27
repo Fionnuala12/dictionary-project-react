@@ -1,7 +1,7 @@
 .Meaning .example {
-    opacity: 0.6;
-    font-style: italic;
-    margin: 8px;
+color: #4e656d;
+font-style: italic;
+margin: 10px auto;
 }
 
 .Meaning li {

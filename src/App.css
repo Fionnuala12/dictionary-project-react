@@ -1,9 +1,17 @@
+.dictionary-app-wrapper {
+  background-image: url(https://epic-dictionary.netlify.app/static/media/workdesk.af3a7bd2.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+}
 
 .App {
     padding: 50px 0 90px;
     max-width: 900px;
     margin: 0 auto;
     font-family: 'Noto Sans JP', sans-serif;
+    
     
 }
 
